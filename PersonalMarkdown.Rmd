@@ -1,0 +1,77 @@
+---
+title: "My_Bioinformatics"
+author: "Kevin"
+date: "10/10/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+##What I learned in Week 2 of the bioinformatics sesh.
+
+```{r}
+myvec <- ("Hey, I can now embed R code in a HTML document! ")
+print(myvec)
+```
+#Moreover I created my first (well, technically second) repository on Github!
+
+```{r}
+#This is what I was perusing into this past week(well, obviously more than what youre about to see but here is a superficial dipping of the feet. Need me statistical prowess to return asap!!#
+
+pacman::p_load(pacman, dplyr, GGally, ggplot2, ggthemes, ggvis, rmarkdown, shiny, lubridiate, stringr, tidyr, httr, rio)
+library(datasets)
+
+#Plotting the head of one of the oldest available dataset in R i.e Iris
+
+head(iris)
+```
+```{r}
+#One more plot :)
+plot(iris$Petal.Length, iris$Petal.Width,
+     col = "#FF0000",
+     pch = 20,
+     main = "Petal length vs Petal Width",
+     xlab = "Petal length",
+     ylab = "Petal width")
+```
+# Formatted
+## text
+*in*
+**R Markdown**
+
+```{r echo = FALSE}
+hist(iris[[2]])
+```
+I also learnt about adding Inline code!
+two plus two equals `r 2+2`
+
+
+##YAML Header
+---
+title : "Harry Potter"
+author : "J.K Rowling"
+date : "26 July, 1997"
+---
+ 
